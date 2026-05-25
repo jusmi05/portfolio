@@ -86,7 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ── STAGGERED CHILDREN ──────────────────────────────
-  // Service cards stagger
+  // Service cards stagger (servicios y precios — sección comentada en HTML)
+  /*
   const serviceCards = gsap.utils.toArray('.service-card');
   serviceCards.forEach((card, i) => {
     gsap.fromTo(card,
@@ -105,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     );
   });
+  */
 
   // ── PROJECT CARDS ───────────────────────────────────
   gsap.utils.toArray('.project-card').forEach((card, i) => {

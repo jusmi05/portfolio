@@ -9,8 +9,9 @@
   <title>Julen Garcia Sanchez — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/theme-override.css" />
 </head>
 <body>
 
@@ -20,7 +21,7 @@
     <ul class="nav-links">
       <li><a href="#about">Sobre mí</a></li>
       <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#services">Servicios</a></li>
+      <!-- <li><a href="#services">Servicios</a></li> -->
       <li><a href="#contact">Contacto</a></li>
     </ul>
     <a href="mailto:garciajulen3@gmail.com" class="nav-cta">Hablemos</a>
@@ -41,10 +42,10 @@
         que <em>venden.</em>
       </h1>
 
-      <p class="hero-sub reveal-up delay-2">
+      <!-- <p class="hero-sub reveal-up delay-2">
         Desarrollador web con mentalidad de founder. Laravel · Vue.js · Shopify · IA.<br>
         No ejecuto tareas. Muevo métricas.
-      </p>
+      </p> -->
 
       <div class="hero-actions reveal-up delay-3">
         <a href="#projects" class="btn-primary">Ver proyectos</a>
@@ -107,6 +108,7 @@
             Lo que me mueve no es el código. Es ver que una métrica <em>se mueve</em> porque yo estuve ahí. Trilingüe (ES · FR · EN), trabajo con autonomía y orientación a resultados medibles.
           </p>
 
+          <!-- SKILLS: lo que puedo hacer yo mismo
           <div class="about-skills reveal-up delay-4">
             <div class="skill-group">
               <span class="skill-label">Dev</span>
@@ -140,12 +142,13 @@
               </div>
             </div>
           </div>
+          -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MARQUEE -->
+  <!-- MARQUEE: stack / lo que puedo hacer
   <div class="marquee-wrap" aria-hidden="true">
     <div class="marquee-track">
       <span>Laravel</span><span class="sep">·</span>
@@ -170,6 +173,7 @@
       <span>n8n</span><span class="sep">·</span>
     </div>
   </div>
+  -->
 
   <!-- PROJECTS -->
   <section class="projects" id="projects">
@@ -183,7 +187,7 @@
       <article class="project-card reveal-up" data-index="01">
         <div class="project-img-col">
           <div class="project-img-wrap">
-            <img src="assets/img/forest-pioneer-portal.jpg" alt="Portal del Empleado — Forest Pioneer" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <img src="/assets/img/image1.png" alt="Portal del Empleado — Forest Pioneer" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
             <div class="project-img-ph" style="background:#111;">
               <span>Portal del Empleado</span>
             </div>
@@ -223,7 +227,7 @@
       <article class="project-card project-card-reverse reveal-up" data-index="02">
         <div class="project-img-col">
           <div class="project-img-wrap">
-            <img src="assets/img/shopify-pv.jpg" alt="Tienda Shopify País Vasco Francés" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <img src="/assets/img/shopify-pv.png" alt="Tienda Shopify País Vasco Francés" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
             <div class="project-img-ph" style="background:#0d1117;">
               <span>Tienda Shopify</span>
             </div>
@@ -299,7 +303,7 @@
       <article class="project-card project-card-reverse reveal-up" data-index="04">
         <div class="project-img-col">
           <div class="project-img-wrap">
-            <img src="assets/img/forest-pioneer-tienda.jpg" alt="Tienda WooCommerce Forest Pioneer" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <img src="/assets/img/forest-pioneer-tienda.png" alt="Tienda WooCommerce Forest Pioneer" class="project-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
             <div class="project-img-ph" style="background:#141414;">
               <span>WooCommerce</span>
             </div>
@@ -349,7 +353,7 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES: servicios y precios por proyecto
   <section class="services" id="services">
     <div class="container">
       <div class="section-header reveal-up">
@@ -408,6 +412,7 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
@@ -447,6 +452,7 @@
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="tu@email.com" required />
             </div>
+            <!-- Tipo de proyecto (vinculado a servicios y precios)
             <div class="form-group">
               <label for="project">Tipo de proyecto</label>
               <select id="project" name="project">
@@ -458,6 +464,7 @@
                 <option value="otro">Otro</option>
               </select>
             </div>
+            -->
             <div class="form-group">
               <label for="message">Mensaje</label>
               <textarea id="message" name="message" rows="4" placeholder="Cuéntame en qué puedo ayudarte..." required></textarea>

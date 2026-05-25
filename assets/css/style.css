@@ -414,6 +414,7 @@ button, input, textarea, select { font-family: inherit; }
 .about-desc strong { color: var(--white); font-weight: 500; }
 .about-desc em { color: var(--orange); font-style: italic; }
 
+/* SKILLS: lo que puedo hacer yo mismo
 .about-skills {
   display: flex;
   flex-direction: column;
@@ -432,8 +433,9 @@ button, input, textarea, select { font-family: inherit; }
   color: var(--white-dim);
 }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+*/
 
-/* ── MARQUEE ───────────────────────────────────────── */
+/* MARQUEE: stack / lo que puedo hacer
 .marquee-wrap {
   overflow: hidden;
   background: var(--bg-2);
@@ -463,6 +465,7 @@ button, input, textarea, select { font-family: inherit; }
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
+*/
 
 /* ── PROJECTS ──────────────────────────────────────── */
 .projects {
@@ -607,7 +610,7 @@ button, input, textarea, select { font-family: inherit; }
 .pull-quote em { color: var(--orange); font-style: italic; }
 .pull-quote strong { color: var(--white); font-style: normal; }
 
-/* ── SERVICES ──────────────────────────────────────── */
+/* SERVICES: servicios y precios por proyecto
 .services {
   padding: clamp(4rem, 10vw, 8rem) 0;
   border-bottom: 1px solid var(--border);
@@ -690,6 +693,7 @@ button, input, textarea, select { font-family: inherit; }
   left: 0;
   color: var(--lime);
 }
+*/
 
 /* ── CONTACT ───────────────────────────────────────── */
 .contact {
@@ -842,7 +846,7 @@ button, input, textarea, select { font-family: inherit; }
   .project-card { grid-template-columns: 1fr; gap: 2rem; }
   .project-card-reverse { direction: ltr; }
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .services-grid { grid-template-columns: 1fr; }
+  /* .services-grid { grid-template-columns: 1fr; } */
   .hero-stats { gap: 1.5rem; }
   .stat { min-width: 80px; padding: 0 1rem; }
   .stat-divider { display: none; }
