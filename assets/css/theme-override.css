@@ -100,7 +100,7 @@ body {
 .about-desc strong { color: var(--white); }
 .about-desc em { color: var(--orange); }
 
-/* .skill-label { color: var(--white-dim); } */
+.skill-label { color: var(--white-dim); }
 
 /* Tags — esquema arena/negro */
 .tag {
@@ -120,14 +120,12 @@ body {
   background: rgba(252,144,3,0.05);
 }
 
-/* MARQUEE: stack / lo que puedo hacer
 .marquee-wrap {
   background: var(--bg-2);
   border-color: var(--border);
 }
 .marquee-track span { color: var(--white-dim); }
 .marquee-track .sep { color: var(--orange); }
-*/
 
 /* ── PROJECTS ─────────────────────────────────────────────────── */
 .projects { background: var(--bg); border-bottom-color: var(--border); }
@@ -163,7 +161,6 @@ body {
 .pull-quote em { color: var(--orange); }
 .pull-quote strong { color: var(--white); }
 
-/* SERVICES: servicios y precios por proyecto
 .services { background: var(--bg); border-bottom-color: var(--border); }
 
 .services-grid {
@@ -182,7 +179,6 @@ body {
 
 .service-list li { color: var(--white-dim); }
 .service-list li::before { color: var(--orange); }
-*/
 
 /* ── CONTACT ──────────────────────────────────────────────────── */
 .contact { background: var(--bg); border-bottom-color: var(--border); }
@@ -251,6 +247,6 @@ body {
 /* ── SECTION TITLE ────────────────────────────────────────────── */
 .section-title { color: var(--white); }
 
-/* ABOUT SKILLS: lo que puedo hacer yo mismo
+/* ── ABOUT SKILLS BORDER ──────────────────────────────────────── */
 .about-skills { border-top-color: var(--border); }
-*/
+
