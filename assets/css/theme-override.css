@@ -1,0 +1,252 @@
+/* ═══════════════════════════════════════════════════════════════
+   THEME OVERRIDE — Arena + Naranja + Negro
+   Pega este bloque AL FINAL de style.css
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── NUEVA FUENTE (más cuadrada y geométrica) ─────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=DM+Mono:wght@300;400&display=swap');
+
+/* ── NUEVAS VARIABLES ─────────────────────────────────────────── */
+:root {
+  /* Fondos */
+  --bg:         #f2ede4;   /* Arena base — fondo principal      */
+  --bg-2:       #ece7dd;   /* Arena ligeramente más oscura      */
+  --bg-3:       #e3ddd3;   /* Arena oscura — tarjetas, inputs   */
+
+  /* Texto */
+  --white:      #1a1814;   /* Negro suave — texto principal     */
+  --white-dim:  #6b6760;   /* Gris tierra — texto secundario    */
+
+  /* Acento único */
+  --orange:     #fc9003;   /* Naranja — único color de acento   */
+  --orange-dim: #c97000;   /* Naranja oscuro — hover            */
+
+  /* Eliminar lima — todo lo que era lima pasa a naranja o negro */
+  --lime:       #fc9003;
+  --lime-dim:   #c97000;
+
+  /* Bordes */
+  --border:     rgba(26,24,20,0.1);
+  --border-2:   rgba(26,24,20,0.05);
+
+  /* Fuente — Outfit: geométrica, cuadrada, limpia */
+  --font-serif: 'Outfit', system-ui, sans-serif;
+  --font-sans:  'Outfit', system-ui, sans-serif;
+  --font-mono:  'DM Mono', monospace;
+}
+
+/* ── BODY BASE ────────────────────────────────────────────────── */
+body {
+  background: var(--bg);
+  color: var(--white);
+}
+
+/* ── NAV ──────────────────────────────────────────────────────── */
+.nav.scrolled {
+  background: rgba(242,237,228,0.94);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-cta {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+.nav-cta:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+/* ── HERO ─────────────────────────────────────────────────────── */
+.hero {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-bg-text {
+  color: rgba(26,24,20,0.04);
+}
+
+.hero-tag {
+  color: var(--white);
+  border-color: var(--border);
+  background: var(--bg-2);
+}
+
+.hero-title { color: var(--white); }
+.hero-title em { color: var(--orange); }
+
+.hero-sub { color: var(--white-dim); }
+
+.stat-val { color: var(--orange); }
+.stat-lbl { color: var(--white-dim); }
+.stat-divider { background: var(--border); }
+
+.scroll-hint span { color: var(--white-dim); }
+.scroll-line { background: linear-gradient(to bottom, var(--white-dim), transparent); }
+
+/* ── ABOUT ────────────────────────────────────────────────────── */
+.about { background: var(--bg); border-bottom-color: var(--border); }
+
+.about-img-wrap { background: var(--bg-3); border: 1px solid var(--border); }
+.about-img-placeholder { color: var(--border); }
+
+.about-img-badge {
+  background: rgba(242,237,228,0.9);
+  color: var(--orange);
+  border-color: rgba(252,144,3,0.25);
+}
+
+.about-desc { color: var(--white-dim); }
+.about-desc strong { color: var(--white); }
+.about-desc em { color: var(--orange); }
+
+.skill-label { color: var(--white-dim); }
+
+/* Tags — esquema arena/negro */
+.tag {
+  border-color: var(--border);
+  color: var(--white-dim);
+  background: var(--bg-3);
+}
+.tag-orange {
+  border-color: rgba(252,144,3,0.35);
+  color: var(--orange);
+  background: rgba(252,144,3,0.07);
+}
+/* lima reemplazada por naranja suave */
+.tag-lime {
+  border-color: rgba(252,144,3,0.25);
+  color: var(--orange-dim);
+  background: rgba(252,144,3,0.05);
+}
+
+.marquee-wrap {
+  background: var(--bg-2);
+  border-color: var(--border);
+}
+.marquee-track span { color: var(--white-dim); }
+.marquee-track .sep { color: var(--orange); }
+
+/* ── PROJECTS ─────────────────────────────────────────────────── */
+.projects { background: var(--bg); border-bottom-color: var(--border); }
+
+.project-card { border-bottom-color: var(--border-2); }
+.project-card:hover .project-title { color: var(--orange); }
+
+.project-img-wrap {
+  background: var(--bg-3);
+  border-color: var(--border);
+}
+.project-img-ph { color: var(--white-dim); }
+.project-img-overlay { color: var(--white-dim); }
+
+.project-cat { color: var(--orange); }
+.project-title { color: var(--white); }
+.project-desc { color: var(--white-dim); }
+
+.project-results li { color: var(--white-dim); }
+.project-results li::before { color: var(--orange); }
+
+.project-impact {
+  color: var(--white-dim);
+  border-color: var(--border);
+  border-left-color: var(--orange);
+  background: rgba(252,144,3,0.04);
+}
+.impact-icon { color: var(--orange); }
+
+/* ── PULL QUOTE ───────────────────────────────────────────────── */
+.quote-section { background: var(--bg-2); border-color: var(--border); }
+.pull-quote p { color: var(--white-dim); }
+.pull-quote em { color: var(--orange); }
+.pull-quote strong { color: var(--white); }
+
+.services { background: var(--bg); border-bottom-color: var(--border); }
+
+.services-grid {
+  background: var(--border);
+  border-color: var(--border);
+}
+.service-card { background: var(--bg); }
+.service-card:hover { background: var(--bg-2); }
+
+.service-num { color: var(--bg-3); }
+.service-name { color: var(--white); }
+.service-desc { color: var(--white-dim); }
+
+.service-price { color: var(--white-dim); border-bottom-color: var(--border); }
+.service-price strong { color: var(--orange); }
+
+.service-list li { color: var(--white-dim); }
+.service-list li::before { color: var(--orange); }
+
+/* ── CONTACT ──────────────────────────────────────────────────── */
+.contact { background: var(--bg); border-bottom-color: var(--border); }
+
+.contact-title { color: var(--white); }
+.contact-title em { color: var(--orange); }
+.contact-desc { color: var(--white-dim); }
+
+.contact-link {
+  color: var(--white-dim);
+  border-color: var(--border);
+  background: var(--bg-2);
+}
+.contact-link:hover {
+  border-color: var(--orange);
+  color: var(--white);
+  background: rgba(252,144,3,0.05);
+}
+.contact-link-icon { color: var(--orange); }
+
+.form-group label { color: var(--white-dim); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: var(--bg-2);
+  border-color: var(--border);
+  color: var(--white);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--orange); }
+.form-group select option { background: var(--bg-2); color: var(--white); }
+::placeholder { color: #b0ab9f; }
+
+/* ── FOOTER ───────────────────────────────────────────────────── */
+.footer {
+  background: var(--bg-2);
+  border-top-color: var(--border);
+}
+.footer-left p { color: var(--white-dim); }
+.footer-right p { color: #b0ab9f; }
+.footer-right p:last-child { color: var(--orange); }
+
+/* ── STATUS DOT — naranja en lugar de lima ────────────────────── */
+.status-dot { background: var(--orange); animation: pulse-orange 2s infinite; }
+@keyframes pulse-orange {
+  0%,100% { opacity:1; transform:scale(1); }
+  50%      { opacity:0.5; transform:scale(0.85); }
+}
+
+/* ── SCROLL LINE ──────────────────────────────────────────────── */
+.scroll-line {
+  background: linear-gradient(to bottom, var(--white-dim), transparent);
+}
+
+/* ── BTN GHOST ────────────────────────────────────────────────── */
+.btn-ghost {
+  color: var(--white);
+  border-color: var(--border);
+}
+.btn-ghost:hover { border-color: var(--white-dim); }
+
+/* ── SECTION LABEL ────────────────────────────────────────────── */
+.section-label { color: var(--orange); }
+
+/* ── SECTION TITLE ────────────────────────────────────────────── */
+.section-title { color: var(--white); }
+
+/* ── ABOUT SKILLS BORDER ──────────────────────────────────────── */
+.about-skills { border-top-color: var(--border); }
+
